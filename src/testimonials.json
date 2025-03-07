@@ -1,0 +1,34 @@
+{
+    "reviews": [
+        {
+            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
+            "author": "Jessica S.",
+            "role": "Local Artist",
+            "stars": 1
+        },
+        {
+            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
+            "author": "Carla P.",
+            "role": "Wake Forest Professor",
+            "stars": 2
+        },
+        {
+            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
+            "author": "Caleb T.",
+            "role": "Food Blogger",
+            "stars": 3
+        },
+        {
+            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
+            "author": "Mike W.",
+            "role": "Winson-Salem Mechanic",
+            "stars": 4
+        },
+        {
+            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
+            "author": "Jacob G.",
+            "role": "Local Student",
+            "stars": 5
+        }
+    ]
+}

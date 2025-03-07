@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, BrowserRouter as Router, Routes } from 'react-router'
+import MatchasNavbar from './components/MatchasNavbar'
+import Home from './pages/Home'
+import MatchasFooter from './components/MatchasFooter'
+import Menu from './pages/Menu'
+
 
 function App() {
+  const navLinks = ["Menu", "About", "Reference"]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div className="min-vh-100" style={{ backgroundColor: "#f8f5f0" }}>
+        <MatchasNavbar navLinks={navLinks} />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+        </Routes>
+
+        <MatchasFooter navLinks={navLinks} />
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App

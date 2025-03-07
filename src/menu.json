@@ -1,0 +1,236 @@
+{
+    "categories": [
+      {
+        "name": "Savory Snacks",
+        "items": [
+          {
+            "name": "Pan de Sal",
+            "price": 1.5,
+            "origin": "The Philipines",
+            "image_src": null,
+            "icons": ["hot"],
+            "description": "A classic Filipino bread roll, slightly sweet and perfect for breakfast or a snack.",
+            "allergens": ["Wheat"]
+          },
+          {
+            "name": "Vegeterian Kimbap",
+            "price": 2.0,
+            "origin": "South Korea",
+            "image_src": "kimbap.webp",
+            "icons": ["cold", "gluten-free"],
+            "description": "Korean seaweed rice rolls filled with seasoned vegetables, offering a light and refreshing meal.",
+            "allergens": ["Sesame"]
+          },
+          {
+            "name": "Tofu Siopao",
+            "price": 3.0,
+            "origin": "The Philipines",
+            "image_src": null,
+            "icons": ["hot"],
+            "description": "A fluffy steamed bun filled with savory tofu, a vegetarian twist on a Filipino favorite.",
+            "allergens": ["Soy", "Wheat"]
+          },
+          {
+            "name": "Shokupan Toast",
+            "price": 1.5,
+            "origin": "Japan",
+            "image_src": null,
+            "icons": ["hot"],
+            "description": "Thick-cut Japanese milk bread toasted to perfection, offering a soft and buttery experience.",
+            "allergens": ["Dairy", "Wheat"]
+          }
+        ]
+      },
+      {
+        "name": "Desserts",
+        "items": [
+          {
+            "name": "Ube Roll Cake",
+            "price": 2.0,
+            "origin": "The Philipines",
+            "image_src": null,
+            "icons": [],
+            "description": "A vibrant purple yam flavored sponge cake rolled with a creamy filling, a sweet Filipino treat.",
+            "allergens": ["Dairy", "Eggs", "Soy", "Wheat"]
+          },
+          {
+            "name": "Dalgona",
+            "price": 1.0,
+            "origin": "South Korea",
+            "image_src": null,
+            "flavors": null,
+            "icons": ["gluten-free"],
+            "description": "A brittle candy made from melted sugar and baking soda, with a sweet and slightly bitter taste.",
+            "allergens": []
+          },
+          {
+            "name": "Coffee Jelly",
+            "price": 2.0,
+            "origin": "Japan",
+            "image_src": "coffee-jelly.webp",
+            "flavors": null,
+            "icons": ["cold"],
+            "description": "A refreshing dessert made with coffee-flavored gelatin, often served with cream or milk.",
+            "allergens": ["Dairy"]
+          },
+          {
+            "name": "Mochi",
+            "price": 1.5,
+            "origin": "Japan",
+            "image_src": "mochi.webp",
+            "flavors": ["Red Bean", "Mango", "Strawberry"],
+            "icons": ["cold", "gluten-free"],
+            "description": "Soft and chewy rice cake filled with sweet red bean paste or other flavored fillings.",
+            "allergens": []
+          },
+          {
+            "name": "Filipino Macaroons",
+            "price": 1.5,
+            "origin": "The Philipines",
+            "image_src": null,
+            "flavors": null,
+            "icons": ["gluten-free"],
+            "description": "Chewy coconut-based macaroons, a sweet and satisfying Filipino snack.",
+            "allergens": ["Eggs"]
+          },
+          {
+            "name": "Shokupan Fruit Sandwich",
+            "price": 3.0,
+            "origin": "Japan",
+            "image_src": null,
+            "flavors": null,
+            "icons": ["cold"],
+            "description": "A delightful sandwich made with soft Japanese milk bread and fresh fruits, perfect for a light treat.",
+            "allergens": ["Dairy", "Wheat"]
+          }
+        ]
+      },
+      {
+        "name": "Tea",
+        "items": [
+          {
+            "name": "Milk Tea",
+            "price": 4.5,
+            "origin": null,
+            "image_src": "milk-tea.webp",
+            "flavors": [
+              "Oolong",
+              "Jasmine",
+              "Taro",
+              "Thai",
+              "Chai",
+              "Brown Sugar",
+              "Matcha"
+            ],
+            "icons": ["cold", "gluten-free"],
+            "description": "A creamy and flavorful tea-based drink, customizable with your choice of tea and sweetness level.",
+            "allergens": ["Dairy"]
+          },
+          {
+            "name": "Hot Tea",
+            "price": 4.5,
+            "origin": null,
+            "image_src": "hot-oolong.jpg",
+            "flavors": ["Oolong", "Jasmine", "Thai", "Chai", "Matcha"],
+            "icons": ["hot", "gluten-free"],
+            "description": "A comforting and aromatic beverage made by steeping tea leaves in hot water.",
+            "allergens": []
+          },
+          {
+            "name": "Inclusions",
+            "price": 0.5,
+            "origin": null,
+            "image_src": null,
+            "flavors": [
+              "Tapioca Boba",
+              "Strawberry Popping Boba",
+              "Lychee Jelly",
+              "Nata de Coco",
+              "Coffe Jelly",
+              "Dalgona Crumble",
+              "Whipped Cream"
+            ],
+            "icons": [],
+            "description": "Add a burst of flavor and texture to your drink with these delicious toppings.",
+            "allergens": ["Dairy"]
+          }
+        ]
+      },
+      {
+        "name": "Coffee",
+        "items": [
+          {
+            "name": "Drip",
+            "price": 3.5,
+            "origin": null,
+            "image_src": null,
+            "flavors": null,
+            "icons": ["hot", "cold"],
+            "description": "A classic and simple coffee brewed by slowly dripping hot water through ground coffee beans.",
+            "allergens": []
+          },
+          {
+            "name": "Vietnamese Coffee",
+            "price": 3.5,
+            "origin": "Vietnam",
+            "image_src": null,
+            "flavors": null,
+            "icons": ["hot", "cold"],
+            "description": "A strong and sweet coffee brewed with a traditional Vietnamese filter, often served with condensed milk.",
+            "allergens": ["Dairy"]
+          },
+          {
+            "name": "Espresso",
+            "price": 3.5,
+            "origin": null,
+            "image_src": null,
+            "flavors": null,
+            "icons": ["hot"],
+            "description": "A concentrated coffee beverage brewed by forcing hot water through finely-ground coffee beans.",
+            "allergens": []
+          },
+          {
+            "name": "Mocha",
+            "price": 3.5,
+            "origin": null,
+            "image_src": "mocha.webp",
+            "flavors": null,
+            "icons": ["hot", "cold"],
+            "description": "A chocolate-flavored coffee drink made with espresso, chocolate, and milk.",
+            "allergens": ["Dairy"]
+          },
+          {
+            "name": "Americano",
+            "price": 3.5,
+            "origin": null,
+            "image_src": null,
+            "flavors": null,
+            "icons": ["hot", "cold"],
+            "description": "A simple coffee drink made with espresso and hot water, similar to drip coffee but with a bolder flavor.",
+            "allergens": []
+          },
+          {
+            "name": "Latte",
+            "price": 3.5,
+            "origin": null,
+            "image_src": null,
+            "flavors": null,
+            "icons": ["hot", "cold"],
+            "description": "An espresso-based drink with steamed milk and a thin layer of foam.",
+            "allergens": ["Dairy"]
+          },
+          {
+            "name": "Cappuccino",
+            "price": 3.5,
+            "origin": null,
+            "image_src": null,
+            "flavors": null,
+            "icons": ["hot"],
+            "description": "An espresso-based drink with steamed milk and a thick layer of foamed milk.",
+            "allergens": ["Dairy"]
+          }
+        ]
+      }
+    ]
+  }
+  
