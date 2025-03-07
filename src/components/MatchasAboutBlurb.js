@@ -21,10 +21,10 @@ export default function MatchasAboutBlurb() {
               Our Story
             </h2>
             <p className="fs-5 mb-3" style={{ color: "#5f635c" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum ipsam eveniet excepturi nihil mollitia reiciendis, unde in perferendis enim debitis sunt aspernatur autem molestias rem dolorum explicabo eligendi, alias aliquam asperiores labore! Dolor, minima.
+              We are an Asian inspired cafe located in the heart of Winston-Salem. We started as an at home business selling teas and desserts and later expanded to establish our own building. 
             </p>
             <p className="fs-5 mb-4" style={{ color: "#5f635c" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum ipsam eveniet excepturi nihil mollitia reiciendis, unde in perferendis enim debitis sunt aspernatur autem molestias rem dolorum explicabo eligendi, alias aliquam asperiores labore! Dolor, minima.
+                We believe in clean, healthy, and ethically sourced ingredients. By using local and plant based products, not only do you experience delicious food and drinks, you can rest easy knowing that what you're consuming is all natural and cruelty free. 
             </p>
             <Button className="rounded-pill" style={{ backgroundColor: "transparent", borderColor: "#5a8c51", color: "#5a8c51" }}>
               Learn More About Us

@@ -15,13 +15,15 @@ export default function MatchasNavbar({ navLinks }) {
         className="sticky-top py-3"
         style={{ backgroundColor: "rgba(248, 245, 240, 0.8)", backdropFilter: "blur(8px)" }}
       >
-        <Container>
-          <Navbar.Brand as={NavLink} href="/" className="d-flex align-items-center">
+      <Container>
+        <Nav>
+          <Navbar.Brand as={Nav.Link} href="../" className="d-flex align-items-center">
             <Leaf className="me-2" size={24} style={{ color: "#5a8c51" }} />
             <span className="fw-bold fs-4" style={{ color: "#3a5a34" }}>
               Matcha's Tea
             </span>
           </Navbar.Brand>
+          </Nav>
 
           <Button variant="link" className="d-md-none p-0 border-0" onClick={handleShow} aria-label="Toggle menu">
             <MenuIcon size={24} style={{ color: "#3a5a34" }} />
