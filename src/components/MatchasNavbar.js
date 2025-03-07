@@ -1,6 +1,7 @@
-import React, { Link, useState } from 'react'
+import React, { useState } from 'react'
 import { Leaf, MenuIcon } from "lucide-react"
 import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
+import { NavLink } from 'react-router'
 
 export default function MatchasNavbar({ navLinks }) {
   const [showMenu, setShowMenu] = useState(false)
@@ -15,7 +16,7 @@ export default function MatchasNavbar({ navLinks }) {
         style={{ backgroundColor: "rgba(248, 245, 240, 0.8)", backdropFilter: "blur(8px)" }}
       >
         <Container>
-          <Navbar.Brand as={Link} href="/" className="d-flex align-items-center">
+          <Navbar.Brand as={NavLink} href="/" className="d-flex align-items-center">
             <Leaf className="me-2" size={24} style={{ color: "#5a8c51" }} />
             <span className="fw-bold fs-4" style={{ color: "#3a5a34" }}>
               Matcha's Tea
