@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Card, Image, Badge } from 'react-bootstrap'
 import { formatPrice } from '../util'
 import { Flame, Snowflake, WheatOff } from 'lucide-react'

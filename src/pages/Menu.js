@@ -4,7 +4,6 @@ import menu from '../menu.json'
 import MatchasMenuCard from '../components/MatchasMenuCard'
 
 export default function Menu() {
-  const categories = menu.categories.map(n => n.name)
 
   return (
     <>

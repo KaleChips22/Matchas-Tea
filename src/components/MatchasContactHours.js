@@ -4,7 +4,6 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Minimap from './Minimap'
 
 export default function MatchasContactHours() {
-  const ourCoords = [51.505, -0.09]
   return (
     <section id="contact" className="py-5" style={{ backgroundColor: "#eae3d7" }}>
       <Container>

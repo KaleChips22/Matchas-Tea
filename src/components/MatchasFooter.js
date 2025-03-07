@@ -1,7 +1,6 @@
 import { Leaf } from 'lucide-react'
 import React from 'react'
 import { Button, Col, Container, Form, Nav, Row } from 'react-bootstrap'
-import { Link } from 'react-router'
 
 export default function MatchasFooter({ navLinks }) {
   return (

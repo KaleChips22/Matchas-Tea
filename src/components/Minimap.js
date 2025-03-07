@@ -9,11 +9,6 @@ export default function Minimap() {
         width: '100%'
     }
 
-    const options = {
-        disableDefaultUI: true,
-        zoomControl: true,
-    }
-
     return (
         <LoadScript googleMapsApiKey='AIzaSyCimMQ9MeVUuI0KL5SqoWEDBvCZXLp1Uy0'>
             <GoogleMap

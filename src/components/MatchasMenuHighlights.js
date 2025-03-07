@@ -1,7 +1,7 @@
-import { Badge, Button, Card, Col, Container, Image, Nav, Row } from 'react-bootstrap'
+import { Button, Col, Container, Nav, Row } from 'react-bootstrap'
 import React from 'react'
 import menu from '../menu.json'
-import { formatPrice, getMenuItems, randomN } from '../util'
+import { getMenuItems, randomN } from '../util'
 import { ArrowRight } from 'lucide-react'
 import MatchasMenuCard from './MatchasMenuCard'
 
