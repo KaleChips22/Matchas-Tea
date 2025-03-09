@@ -66,7 +66,7 @@ export default function Reference() {
                     <Card className="h-100 border-0 shadow-sm rounded-4 overflow-hidden">
                       <Card.Body className="d-flex flex-column">
                         <div className="d-flex justify-content-between align-items-center mb-3">
-                          <h3 className="fs-4 fw-bold mb-0" style={{ color: "#3a5a34" }}>
+                          <h3 className="fs-4 fw-bold mb-0" style={{ color: "#5a8c51" }}>
                             {reference.name}
                           </h3>
                           <Button
