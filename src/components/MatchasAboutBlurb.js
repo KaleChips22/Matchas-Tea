@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Col, Container, Image, Row } from 'react-bootstrap'
+import { Button, Col, Container, Image, Nav, Row } from 'react-bootstrap'
 
 export default function MatchasAboutBlurb() {
   return (
@@ -26,9 +26,11 @@ export default function MatchasAboutBlurb() {
             <p className="fs-5 mb-4" style={{ color: "#5f635c" }}>
                 We believe in clean, healthy, and ethically sourced ingredients. By using local and plant based products, not only do you experience delicious food and drinks, you can rest easy knowing that what you're consuming is all natural and cruelty free. 
             </p>
-            <Button className="rounded-pill" style={{ backgroundColor: "transparent", borderColor: "#5a8c51", color: "#5a8c51" }}>
-              Learn More About Us
-            </Button>
+            <Nav>
+              <Button as={Nav.Link} href="/about" className="rounded-pill" style={{ backgroundColor: "transparent", borderColor: "#5a8c51", color: "#5a8c51" }}>
+                Learn More About Us
+              </Button>
+            </Nav>
           </Col>
         </Row>
       </Container>

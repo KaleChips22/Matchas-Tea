@@ -3,6 +3,8 @@ import MatchasNavbar from './components/MatchasNavbar'
 import Home from './pages/Home'
 import MatchasFooter from './components/MatchasFooter'
 import Menu from './pages/Menu'
+import About from './pages/About'
+import { Suspense } from 'react'
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
         </Routes>
 
         <MatchasFooter navLinks={navLinks} />

@@ -1,8 +1,29 @@
 import { Leaf } from 'lucide-react'
-import React from 'react'
+import React, { useRef } from 'react'
 import { Button, Col, Container, Form, Nav, Row } from 'react-bootstrap'
+import useLocalStorage from '../hooks/useLocalStorage'
 
 export default function MatchasFooter({ navLinks }) {
+  const [submittedEmail, setSubmittedEmail] = useLocalStorage('matchas-emailsent', false)
+
+  // console.log(submittedEmail)
+
+  const emailRef = useRef()
+
+  function handleSubmitEmail(e) {
+    e.preventDefault()
+
+    setSubmittedEmail(true)
+    localStorage.setItem('matchas-email', emailRef.current.value)
+  }
+
+  function handleUnsubscribe(e) {
+    e.preventDefault()
+
+    setSubmittedEmail(false)
+    localStorage.removeItem('matchas-email')
+  }
+
   return (
     <>
       <section className="py-5" style={{ backgroundColor: "#5a8c51" }}>
@@ -11,17 +32,25 @@ export default function MatchasFooter({ navLinks }) {
             <Col md={8} lg={6}>
               <div className="text-center">
                 <h2 className="display-6 fw-bold mb-3 text-white">
-                  Join Our Community
+                  {!submittedEmail ? 'Join Our Community' : 'Thanks for  your Support!'}
                 </h2>
                 <p className="mb-4 text-white-50">
-                  Subscribe to our newsletter for seasonal menu updates, event announcements, and exclusive offers.
+                  {!submittedEmail ? 'Subscribe to our newsletter for seasonal menu updates, event announcements, and exclusive offers.' : `We will send you our weekly newsletter to ${localStorage.getItem('matchas-email')}`}
                 </p>
-                <Form className="d-flex flex-column flex-sm-row gap-2">
-                  <Form.Control type="email" placeholder="Your email address" className="rounded-pill" />
-                  <Button className="rounded-pill" style={{ backgroundColor: "#3a5a34", borderColor: "#3a5a34" }}>
-                    Subscribe
-                  </Button>
-                </Form>
+                {!submittedEmail ? (
+                  <Form className="d-flex flex-column flex-sm-row gap-2" onSubmit={handleSubmitEmail}>
+                    <Form.Control type="email" placeholder="Your email address" className="rounded-pill" ref={emailRef} />
+                    <Button className="rounded-pill" type="submit" style={{ backgroundColor: "#3a5a34", borderColor: "#3a5a34" }}>
+                      Subscribe
+                    </Button>
+                  </Form>
+                ) : (
+                  <Form className="d-flex flex-column flex-sm-row gap-2 align-items-center justify-content-center" onSubmit={handleUnsubscribe}>
+                    <Button className="rounded-pill" type="submit" style={{ backgroundColor: "#3a5a34", borderColor: "#3a5a34" }}>
+                      Unsubscribe
+                    </Button>
+                  </Form>
+                )}
               </div>
             </Col>
           </Row>
