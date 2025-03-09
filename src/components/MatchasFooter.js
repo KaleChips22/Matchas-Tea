@@ -59,7 +59,7 @@ export default function MatchasFooter({ navLinks }) {
 
       <footer className="py-5 text-white" style={{ backgroundColor: "#3a5a34" }}>
         <Container>
-          <Row className="gy-4 gx-5">
+          <Row className="gy-4 gx-5 mb-3">
             <Col md={3}>
               <div className="d-flex align-items-center gap-2 mb-3">
                 <Leaf size={24} />
@@ -100,6 +100,11 @@ export default function MatchasFooter({ navLinks }) {
               <p className="text-white-50"><span className="fst-italic">@matchasteaws</span> on all platforms</p>
             </Col>
           </Row>
+          <div className="text-center text-white-50">
+            <p>
+              &copy; 2025 Matcha's Tea. All Rights Reserved.
+            </p>
+          </div>
         </Container>
       </footer>
     </>

@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import MatchasFooter from './components/MatchasFooter'
 import Menu from './pages/Menu'
 import About from './pages/About'
+import Reference from './pages/Reference'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
+          <Route path="/reference" element={<Reference />} />
         </Routes>
 
         <MatchasFooter navLinks={navLinks} />
