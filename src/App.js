@@ -4,7 +4,6 @@ import Home from './pages/Home'
 import MatchasFooter from './components/MatchasFooter'
 import Menu from './pages/Menu'
 import About from './pages/About'
-import { Suspense } from 'react'
 
 
 function App() {

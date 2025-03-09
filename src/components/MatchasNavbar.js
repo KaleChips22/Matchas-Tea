@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Leaf, MenuIcon } from "lucide-react"
 import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
-import { NavLink } from 'react-router'
 
 export default function MatchasNavbar({ navLinks }) {
   const [showMenu, setShowMenu] = useState(false)
