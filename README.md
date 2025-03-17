@@ -1,4 +1,5 @@
 # Matcha's Tea
-is a hypothetical store that does not exist.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c9eedb4e-10f1-4e37-b606-c469fdb6eb7a/deploy-status)](https://app.netlify.com/sites/mtachas-tea/deploys)
 
-This is a TSA Webmaster Submission made in ReactJS
+## Todo
+[Trello](https://trello.com/b/NLiY7qPn/matchas-tea)
