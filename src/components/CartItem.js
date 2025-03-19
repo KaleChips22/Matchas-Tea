@@ -40,7 +40,7 @@ const CartItem = ({ item, setCart }) => {
 
   return (
     <Card className="p-3 w-100 shadow-sm" style={{ border: "none", backgroundColor: "rgb(248, 245, 240)" }}>
-      <div className="d-flex position-relative">
+      <div className="d-flex position-relative mb-2">
         {item.count && (
           <Badge className="rounded-pill bg-success position-absolute bottom-0 left-0 p-0 d-flex flex-row gap-2 align-items-center justify-content-center overflow-hidden fs-6">
             <div className="p-2" style={{ backgroundColor: "#ffffff33", cursor: "pointer" }} onClick={decItem}>-</div>
@@ -61,6 +61,21 @@ const CartItem = ({ item, setCart }) => {
           <p className="fs-6 fw-medium" style={{ color: "rgb(95, 110, 92)" }}>{item.description}</p>
         </div>
       </div>
+      {item.flavors ? (
+        <>
+          <div className="my-2 fw-semibold fs-5" style={{ color: "#3a5a34" }}>
+            More Options:
+          </div>
+          <div className="fs-6 fw-medium ms-4" style={{ color: "rgb(95, 110, 92)" }}>
+            {item.flavors.map(f => (
+              <div className="d-flex flex-row gap-2">
+                <input type="checkbox" key={f} value={f} id={`${item.name}-${f}`} style={{ accentColor: "#3a5a34" }} />
+                <label htmlFor={`${item.name}-${f}`}>{f}</label>
+              </div>
+            ))}
+          </div>
+        </>
+      ) : <></> }
     </Card>
   )
 }

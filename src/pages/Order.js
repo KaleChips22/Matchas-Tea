@@ -1,10 +1,11 @@
-import { Button, Col, Container, Row } from "react-bootstrap"
+import { Button, Card, Col, Container, Row } from "react-bootstrap"
 import menu from '../menu.json'
 import MatchasMenuCard from "../components/MatchasMenuCard"
 import { useEffect, useState } from "react"
 import { ShoppingCart, X } from "lucide-react"
 import CartItem from "../components/CartItem"
 import useLocalStorage from "../hooks/useLocalStorage"
+import { formatPrice } from "../util"
 
 export default function Order() {
   const [cart, setCart] = useLocalStorage('cart', [])
@@ -36,6 +37,10 @@ export default function Order() {
   const tryOpenCart = e => {
     if (!e.target.toString().includes('Div')) return
     setCartOpen(true)
+  }
+
+  const getTotal = () => {
+    return cart.reduce((prev, curr) => prev + curr.price * curr.count, 0)
   }
 
   return (
@@ -74,7 +79,7 @@ export default function Order() {
                 ))}
                 </Container>
               </Col>
-            <Col style={{ backgroundColor: "#eae3d7" }} onClick={tryOpenCart} className={`rounded-3 px-4 | cart ${cartOpen && 'opened'}`}>
+            <Col style={{ backgroundColor: "#eae3d7" }} onClick={tryOpenCart} className={`rounded-3 px-4 pb-4 | cart ${cartOpen && 'opened'}`}>
               <div className="mb-4 py-3 d-flex align-items-start justify-content-between">
                 <h3 className="fs-3 fw-bold mb-2" style={{ color: "#3a5a34" }}>
                   Your Cart
@@ -88,8 +93,12 @@ export default function Order() {
                     {cart.map((item, index) => (
                       <CartItem key={index} item={item} setCart={setCart} />
                     ))}
+                    <Card className="p-3 w-100 shadow-sm d-flex flex-row align-items-center justify-content-between" style={{ border: "none", backgroundColor: "rgb(248, 245, 240)" }}>
+                      <h3 className="fs-5 fw-bold" style={{ color: "#3a5a34" }}>Total</h3>
+                      <p className="fs-5 fw-medium" style={{ color: "#5a8c51" }}>{ formatPrice(getTotal()) }</p>
+                    </Card>
                     <Button className="w-100 rounded-pill fs-5 fw-semibold" style={{ backgroundColor: "#5a8c51", borderColor: "#5a8c51" }} onClick={() => setCart([])}>Order</Button>
-                    <Button className="w-100 rounded-pill fs-6 fw-medium" style={{ backgroundColor: "transparent", borderColor: "#5a8c51", color: "#5a8c51" }} onClick={() => setCart([])}>Clear Cart</Button>
+                    <Button className="w-100 rounded-pill fs-6 fw-medium" style={{ backgroundColor: "rgb(248, 245, 240)", borderColor: "#5a8c51", color: "#5a8c51" }} onClick={() => setCart([])}>Clear Cart</Button>
                   </>
                 ) : (
                   <p className="fs-6 mt-5" style={{ color: "#5f6e5c" }}>There is nothing in your cart...</p>
