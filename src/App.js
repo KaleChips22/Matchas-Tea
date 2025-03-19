@@ -5,7 +5,9 @@ import MatchasFooter from './components/MatchasFooter'
 import Menu from './pages/Menu'
 import About from './pages/About'
 import Reference from './pages/Reference'
+import Order from './pages/Order'
 
+import './App.css'
 
 function App() {
   const navLinks = ["Menu", "About", "Reference"]
@@ -21,6 +23,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
           <Route path="/reference" element={<Reference />} />
+          <Route path="/order" element={<Order />} />
         </Routes>
 
         <MatchasFooter navLinks={navLinks} />

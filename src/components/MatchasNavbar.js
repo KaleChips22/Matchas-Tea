@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Leaf, MenuIcon } from "lucide-react"
 import { Button, Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
+import { Link } from 'react-router'
 
 export default function MatchasNavbar({ navLinks }) {
   const [showMenu, setShowMenu] = useState(false)
@@ -35,7 +36,7 @@ export default function MatchasNavbar({ navLinks }) {
                   {item}
                 </Nav.Link>
               ))}
-              <Button className="ms-2 rounded-pill" style={{ backgroundColor: "#5a8c51", borderColor: "#5a8c51" }}>
+              <Button as={Link} to="/order" className="ms-2 rounded-pill" style={{ backgroundColor: "#5a8c51", borderColor: "#5a8c51" }}>
                 Order Online
               </Button>
             </Nav>
