@@ -1,0 +1,19 @@
+import { Button, Modal } from "react-bootstrap"
+
+const TOSModal = ({ show, handleClose }) => {
+    return (
+        <Modal show={show} onHide={handleClose} size="lg">
+            <Modal.Header closeButton>
+                <Modal.Title>Terms of Service</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa modi molestias fuga praesentium nesciunt asperiores ipsa distinctio laborum. Nostrum ut natus, qui nam delectus praesentium esse similique dolor distinctio adipisci debitis odio laudantium magni quaerat. Amet eveniet fugiat magnam consectetur velit expedita, numquam asperiores possimus quis obcaecati nesciunt, officiis nemo aliquam iure! Facere, et repellendus iste quae, quis sit accusamus ad asperiores doloremque, laboriosam beatae? A unde, architecto dolore minima provident nulla minus deserunt fuga, aliquam beatae, laboriosam velit sed obcaecati? Recusandae odio ut fugiat, itaque perferendis nobis repellat repudiandae debitis quaerat sequi laborum, unde provident, blanditiis possimus autem! Debitis magni nam modi doloremque quis quas sint facilis deleniti mollitia nihil in voluptates nesciunt, consectetur eum iure vitae dolores labore esse repellat est id consequatur? Perferendis maxime sint sequi dolorum facilis? Dolores earum rem esse provident consequuntur quisquam ducimus repellat. Nobis dolorum accusamus rem. Officia provident ipsa magni, earum exercitationem beatae tempora iste necessitatibus debitis ex incidunt excepturi, magnam, dolore unde autem labore deserunt consequatur asperiores repellendus sint? Consequuntur voluptates accusamus qui asperiores nam rerum quas facere corporis, nemo vitae dolor alias id aperiam voluptatibus numquam praesentium, reiciendis recusandae, dicta voluptate. Dignissimos soluta ex, voluptas maiores sint eligendi cumque iste nisi. Repudiandae facere molestiae incidunt modi veniam aut, harum eveniet. Pariatur eveniet commodi accusamus molestias natus id reiciendis laboriosam possimus, deleniti eius nemo. Nihil nesciunt non blanditiis fuga voluptate cumque quod consequatur culpa sunt voluptatem porro recusandae dignissimos, iure eius excepturi numquam itaque? Nihil laboriosam qui reiciendis quisquam necessitatibus libero praesentium itaque voluptas labore maiores perspiciatis esse omnis obcaecati illum quaerat hic tempore, eligendi distinctio, voluptatem tenetur consectetur maxime. Qui modi, dolorum amet ad est quae atque sunt aliquam corporis tempore velit distinctio molestias laboriosam sint iste itaque consequuntur hic, nemo quos exercitationem ratione? Quas repellat aspernatur sit ratione natus mollitia exercitationem pariatur sed voluptatum sapiente? Necessitatibus nemo repellendus doloribus, repellat, dicta aspernatur quam quibusdam cumque esse error aut voluptate modi placeat sunt molestias. Ex quaerat non quis enim beatae maxime ut officiis, eum quibusdam. Repellendus quis at dolor maiores, ratione non quia aut nemo architecto odit minus voluptates nesciunt quidem deserunt corporis, ut repudiandae doloremque beatae dolores? Beatae nam aperiam nemo dignissimos, vero nostrum distinctio quos velit facilis sunt doloribus fugit eaque vitae reprehenderit recusandae, officiis quaerat veniam consequatur accusamus. Laborum tempora sed facilis unde, aspernatur, magni dolor saepe ea quidem obcaecati, ipsum voluptate nobis iure! Explicabo eligendi sequi doloremque aliquam quasi earum, neque vel amet delectus soluta tenetur. Tempora, hic, ipsam nobis soluta natus deleniti vel corrupti pariatur laudantium rem iure earum odit ducimus itaque nesciunt, aperiam officia numquam! Laborum, nobis ipsa.
+            </Modal.Body>
+            <Modal.Footer>
+                <Button onClick={handleClose} style={{
+                    backgroundColor: "#3a5a34", borderColor: "#3a5a34" }}>Close</Button>
+            </Modal.Footer>
+        </Modal>
+    )
+}
+export default TOSModal

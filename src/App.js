@@ -8,6 +8,7 @@ import Reference from './pages/Reference'
 import Order from './pages/Order'
 
 import './App.css'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   const navLinks = ["Menu", "About", "Reference"]
@@ -16,6 +17,8 @@ function App() {
     <Router>
       <div className="min-vh-100" style={{ backgroundColor: "#f8f5f0" }}>
         <MatchasNavbar navLinks={navLinks} />
+
+        <Toaster/>
 
         <Routes>
           <Route path="/" element={<Home />} />

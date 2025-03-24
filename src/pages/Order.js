@@ -6,6 +6,7 @@ import { ShoppingCart, X } from "lucide-react"
 import CartItem from "../components/CartItem"
 import useLocalStorage from "../hooks/useLocalStorage"
 import { formatPrice } from "../util"
+import toast from "react-hot-toast"
 
 export default function Order() {
   const [cart, setCart] = useLocalStorage('cart', [])
@@ -41,6 +42,11 @@ export default function Order() {
 
   const getTotal = () => {
     return cart.reduce((prev, curr) => prev + curr.price * curr.count, 0)
+  }
+
+  const orderCart = () => {
+    toast('Placed your order')
+    setCart([])
   }
 
   return (
@@ -97,7 +103,7 @@ export default function Order() {
                       <h3 className="fs-5 fw-bold" style={{ color: "#3a5a34" }}>Total</h3>
                       <p className="fs-5 fw-medium" style={{ color: "#5a8c51" }}>{ formatPrice(getTotal()) }</p>
                     </Card>
-                    <Button className="w-100 rounded-pill fs-5 fw-semibold" style={{ backgroundColor: "#5a8c51", borderColor: "#5a8c51" }} onClick={() => setCart([])}>Order</Button>
+                    <Button className="w-100 rounded-pill fs-5 fw-semibold" style={{ backgroundColor: "#5a8c51", borderColor: "#5a8c51" }} onClick={() => orderCart()}>Order</Button>
                     <Button className="w-100 rounded-pill fs-6 fw-medium" style={{ backgroundColor: "rgb(248, 245, 240)", borderColor: "#5a8c51", color: "#5a8c51" }} onClick={() => setCart([])}>Clear Cart</Button>
                   </>
                 ) : (

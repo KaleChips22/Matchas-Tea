@@ -1,10 +1,15 @@
 import { Leaf } from 'lucide-react'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { Button, Col, Container, Form, Nav, Row } from 'react-bootstrap'
 import useLocalStorage from '../hooks/useLocalStorage'
+import PrivacyPolicyModal from './PrivacyPolicyModal'
+import TOSModal from './TOSModal'
 
 export default function MatchasFooter({ navLinks }) {
   const [submittedEmail, setSubmittedEmail] = useLocalStorage('matchas-emailsent', false)
+
+  const [showPPModal, setShowPPModal] = useState(false)
+  const [showTOSModal, setShowTOSModal] = useState(false)
 
   // console.log(submittedEmail)
 
@@ -86,13 +91,16 @@ export default function MatchasFooter({ navLinks }) {
             <Col md={3}>
               <h3 className="fs-5 fw-bold mb-3">Policies</h3>
               <ul className="list-unstyled">
-                {["Privacy Policy", "Terms of Service"].map(item => (
-                  <li key={item} className="mb-2">
-                    <p className="text-decoration-none text-white-50">
-                      {item}
-                    </p>
-                  </li>
-                )) }
+                <li className="mb-2" onClick={() => setShowPPModal(true)} style={{ cursor: "pointer" }}>
+                  <p className="text-decoration-none text-white-50">
+                    Privacy Policy
+                  </p>
+                </li>
+                <li className="mb-2" onClick={() => setShowTOSModal(true)} style={{ cursor: "pointer" }}>
+                  <p className="text-decoration-none text-white-50">
+                    Terms of Service
+                  </p>
+                </li>
               </ul>
             </Col>
             <Col md={3}>
@@ -107,6 +115,8 @@ export default function MatchasFooter({ navLinks }) {
           </div>
         </Container>
       </footer>
+      <PrivacyPolicyModal show={false} handleClose={() => setShowPPModal(false)} />
+      <TOSModal show={false} handleClose={() => setShowTOSModal(false)} />
     </>
   )
 }

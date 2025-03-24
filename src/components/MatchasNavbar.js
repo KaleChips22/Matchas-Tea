@@ -17,7 +17,7 @@ export default function MatchasNavbar({ navLinks }) {
       >
       <Container>
         <Nav>
-          <Navbar.Brand as={Nav.Link} href="../" className="d-flex align-items-center">
+          <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
             <Leaf className="me-2" size={24} style={{ color: "#5a8c51" }} />
             <span className="fw-bold fs-4" style={{ color: "#3a5a34" }}>
               Matcha's Tea
@@ -32,9 +32,9 @@ export default function MatchasNavbar({ navLinks }) {
           <Navbar.Collapse id="basic-navbar-nav" className="d-none d-md-flex">
             <Nav className="ms-auto align-items-center">
               {navLinks.map((item) => (
-                <Nav.Link key={item} href={item.toLowerCase()} className="mx-2" style={{ color: "#3a5a34" }}>
+                <Link key={item} to={item.toLowerCase()} className="mx-2 text-decoration-none" style={{ color: "#3a5a34" }}>
                   {item}
-                </Nav.Link>
+                </Link>
               ))}
               <Button as={Link} to="/order" className="ms-2 rounded-pill" style={{ backgroundColor: "#5a8c51", borderColor: "#5a8c51" }}>
                 Order Online
@@ -48,17 +48,17 @@ export default function MatchasNavbar({ navLinks }) {
               <div className="d-flex flex-column gap-4 pt-3">
                 <Nav>
                   {navLinks.map((item) => (
-                    <Nav.Link
+                    <Link
                       key={item}
-                      href={item.toLowerCase()}
-                      className="fs-4 fw-medium text-decoration-none"
+                      to={item.toLowerCase()}
+                      className="fs-4 fw-medium text-decoration-none my-2"
                       style={{ color: "#3a5a34" }}
                       onClick={handleClose}
                     >
                       {item}
-                    </Nav.Link>
+                    </Link>
                   ))}
-                  <Button className="mt-3 rounded-pill" style={{ backgroundColor: "#5a8c51", borderColor: "#5a8c51" }}>
+                  <Button as={Link} to="/order" className="mt-3 rounded-pill" style={{ backgroundColor: "#5a8c51", borderColor: "#5a8c51" }}>
                     Order Online
                   </Button>
                 </Nav>

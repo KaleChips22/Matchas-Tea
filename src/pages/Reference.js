@@ -14,7 +14,7 @@ export default function Reference() {
     design: [
       {
         name: "Bootstrap",
-        description: "A popular CSS framework that provides responsive design components. Used for the layout and styling of our website.",
+        description: "A popular CSS framework that provides responsive design components. Used for the layout and styling of our website. \n The templates and themes used in this website we created solely by our team.",
         url: "https://getbootstrap.com/"
       },
       {

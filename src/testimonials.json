@@ -1,34 +1,64 @@
 {
     "reviews": [
         {
-            "quote": "Rat poisoning in the bubbles :( Made my husband died",
-            "author": "Jessica S.",
-            "role": "Local Artist",
-            "stars": 1
+            "quote": "My wife is Filipino, so of course we got their siopao and macaroons. She said it tasted a lot like what she would have back home. Their jasmine tea was also really yummy.",
+            "author": "Mark S.",
+            "role": "Local Physician",
+            "stars": 5
         },
         {
-            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
-            "author": "Carla P.",
-            "role": "Wake Forest Professor",
-            "stars": 2
-        },
-        {
-            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
-            "author": "Caleb T.",
+            "quote": "I regularly go to Matcha's, and my only complaint is that it isn't closer to where I live! The workers are consistently kind and attentive and the drinks and food are always superb. Definitely stop by if you have the time.",
+            "author": "Lexie G.",
             "role": "Food Blogger",
-            "stars": 3
+            "stars": 5
         },
         {
-            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
-            "author": "Mike W.",
-            "role": "Winson-Salem Mechanic",
+            "quote": "I visit Winston-Salem about twice a year for the holidays, but I always make sure to come to Matcha's. My daughter is vegetarian so I love how they have options my whole family can enjoy. My favorite thing to get their is the ube roll cake, it's super fluffy and it has a great ube flavor.",
+            "author": "Owen H.",
+            "role": "NY Times Editor",
+            "stars": 5
+        },
+        {
+            "quote": "I absolutely LOVE Matcha's. It's a great place for a date, study session or to get a quick pick-me-up. I was on a run and popped in to get an espresso, and it was delicious, as always.",
+            "author": "Miranda B.",
+            "role": "Local Pilates Instructor",
+            "stars": 5
+        },
+        {
+            "quote": "[LIA MAKE ANOTHER QUOTE!!!!]",
+            "author": "Derek S.",
+            "role": "something",
+            "stars": 5
+        },
+        {
+            "quote": "[LIA MAKE ANOTHER QUOTE!!!!]",
+            "author": "Richard W.",
+            "role": "something",
+            "stars": 5
+        },
+        {
+            "quote": "This was my first time visiting and I got a latte and dalgona. While it tasted super good, it took awhile for the workers to make and the overall customer service wasn't great. The ambiance was really cute though, so I think I'll visit again.",
+            "author": "Christina Y.",
+            "role": "Wake Forest Student",
             "stars": 4
         },
         {
-            "quote": "The quick brown fox jumps over the lazy dog. The hasty tan mammal leaps over the pathetic canine.",
-            "author": "Jacob G.",
-            "role": "Local Student",
-            "stars": 5
+            "quote": "I brought one of my friends here because I heard it was really good. We both got one of their hot teas and they were both over steeped. It was very crowded, so I think the workers just lost track of time or something. Their pan de sal was probably the best piece of bread I had ever eaten, though. I'm totally coming back for that, but I wish they sold it by the dozen",
+            "author": "George O.",
+            "role": "Winston-Salem City Council",
+            "stars": 4
+        },
+        {
+            "quote": "[LIA MAKE ANOTHER QUOTE!!!!]",
+            "author": "Meredith G.",
+            "role": "Bartender in Winston-Salem",
+            "stars": 4
+        },
+        {
+            "quote": "The matcha tasted like straight up grass. Super cute cafe and the mochi was really good too! Overall, I had a pretty positive experience, just don't get their matcha. 🤮🤮",
+            "author": "Karen A.",
+            "role": "Stay at Home Mom",
+            "stars": 3
         }
     ]
 }
