@@ -57,9 +57,9 @@ export default function Order() {
             <h1 className="display-4 fw-bold mb-3" style={{ color: "#3a5a34" }}>
               Order
             </h1>
-            <p className="fs-5 mx-auto" style={{ color: "#5f6e5c", maxWidth: "800px" }}>
+            {/* <p className="fs-5 mx-auto" style={{ color: "#5f6e5c", maxWidth: "800px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem non sint repudiandae dolore harum.
-            </p>
+            </p> */}
           </div>
         </Container>
       </section>
