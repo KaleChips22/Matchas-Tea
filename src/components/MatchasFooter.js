@@ -8,8 +8,8 @@ import TOSModal from './TOSModal'
 export default function MatchasFooter({ navLinks }) {
   const [submittedEmail, setSubmittedEmail] = useLocalStorage('matchas-emailsent', false)
 
-  const [showPPModal, setShowPPModal] = useState(false)
-  const [showTOSModal, setShowTOSModal] = useState(false)
+  const setShowPPModal = useState(false)[1]
+  const setShowTOSModal = useState(false)[1]
 
   // console.log(submittedEmail)
 

@@ -7,11 +7,11 @@ export default function MatchasTestimonials() {
   const reviews = randomN(3, testimonials.reviews)
 
   const getPercent = i => {
-    return i == 2 ? 100 / (4 * testimonials.reviews.length + 1) : 100 * testimonials.reviews.filter(r => r.stars == i).length / (testimonials.reviews.length + 1)
+    return i === 2 ? 100 / (4 * testimonials.reviews.length + 1) : 100 * testimonials.reviews.filter(r => r.stars === i).length / (testimonials.reviews.length + 1)
   }
 
   const getNum = i => {
-    return i == 2 ? 1 : testimonials.reviews.filter(r => r.stars == i).length * 4
+    return i === 2 ? 1 : testimonials.reviews.filter(r => r.stars === i).length * 4
   }
 
   return (
