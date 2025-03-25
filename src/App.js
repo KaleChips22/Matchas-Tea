@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-vh-100" style={{ backgroundColor: "#f8f5f0" }}>
+      <div className="min-vh-100 overflow-hidden" style={{ backgroundColor: "#f8f5f0" }}>
         <MatchasNavbar navLinks={navLinks} />
 
         <Toaster/>
