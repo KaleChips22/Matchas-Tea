@@ -27,20 +27,28 @@ export default function Reference() {
       {
         name: "Student Copyright Checklist",
         description: "",
-        url: "/resources/tsa/Student_Copyright_Checklist.pdf"
+        url: "/Student_Copyright_Checklist.pdf"
       },
       {
         name: "Student Work Log",
         description: "",
-        url: "/resources/tsa/Student_Work_Log.pdf"
+        url: "/Student_Work_Log.pdf"
       },
+    ],
+    imageCitations: [
+      {
+        name: "Image Citations",
+        description: "All of the images used in this project, in MLA format.",
+        url: "/Image_Citations.pdf"
+      }
     ]
   }
 
   const categoryTitles = {
     framework: "Frameworks",
     design: "Design Resources",
-    studentResources: "Student Resources"
+    studentResources: "Student Resources",
+    imageCitations: "Image Citations"
   }
 
   return (

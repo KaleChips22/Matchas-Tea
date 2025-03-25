@@ -10,10 +10,10 @@ export default function MatchasAboutBlurb() {
           <Col md={6}>
             <div className="position-relative rounded-4 overflow-hidden shadow" style={{ height: "400px" }}>
               <Image
-                src=""
+                src="https://cdn.pixabay.com/photo/2020/11/18/15/49/cafe-5755763_960_720.jpg"
                 alt="Our cafe interior"
                 fill
-                className="object-fit-cover"
+                className="object-fit-cover w-100 h-100"
               />
             </div>
           </Col>

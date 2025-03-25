@@ -4,10 +4,10 @@ import { Card, Col, Container, Image, Row } from 'react-bootstrap'
 
 export default function About() {
   const timeLine = [
-    "TIMELINE -- 2018 -- naiofhnoasnv;jldi enuibh iebg ijebguien brgienrigneijr nierng uiebnguvihebnvhifbnivh euigrh ie h jksd js jksd mmik.",
-    "TIMELINE -- 2020 -- naiofhnoasnv;jldi enuibh iebg ijebguien brgienrigneijr nierng uiebnguvihebnvhifbnivh euigrh ie h jksd js jksd mmik.",
-    "TIMELINE -- 2022 -- naiofhnoasnv;jldi enuibh iebg ijebguien brgienrigneijr nierng uiebnguvihebnvhifbnivh euigrh ie h jksd js jksd mmik.",
-    "TIMELINE -- Today -- naiofhnoasnv;jldi enuibh iebg ijebguien brgienrigneijr nierng uiebnguvihebnvhifbnivh euigrh ie h jksd js jksd mmik."
+    "Matcha's Tea began as a small at-home business, born from a love of high-quality matcha and a passion for plant-based living. Working out of our own kitchen; selling out of our own garage. We crafted vegan snacks for family, friends, and a growing community of tea lovers. What started as our passion project quickly caught on and blew up.",
+    "We expanded our doors in the heart of Winston-Salem, North Carolina, continuing our vision: to bring authentic, high-quality, vegan matcha and handcrafted teas to the community. Headed by tea enthusiasts with a passion for modern and cross-cultural flavors, the cafe quickly became a local favorite, offering a cozy atmospheres",
+    "As the world around us changed, so did Matcha's Tea. Despite challenges, we adapted; we introduced online ordering, to-go options, and a carefully chosen selection of loose-leaf teas for people like you to enjoy at home. Our commitment to sustainability, cruelty-free ingredients, and health made us a go to spot for health-conscious customers and tea lovers alike.",
+    "With growing support from local customers, Matcha's Tea flourished. We redesigned our space to accommodate more guests, creating the most serene tea lounge around. We began collaborating with local artists and other businesses to create a unique and culture filled experience that shifts with the seasons."
   ]
   return (
     <>
@@ -28,10 +28,10 @@ export default function About() {
                 style={{ height: "350px" }}
               >
                 <Image
-                  src=""
+                  src="https://cdn.pixabay.com/photo/2020/11/18/15/49/cafe-5755763_960_720.jpg"
                   alt="Our teahouse interior"
                   fill
-                  className="object-fit-cover"
+                  className="object-fit-cover w-100 h-100"
                 />
               </div>
             </Col>
@@ -159,10 +159,10 @@ export default function About() {
             <Col lg={6}>
               <div className="position-relative rounded-4 overflow-hidden shadow h-100" style={{ minHeight: "350px" }}>
                 <Image
-                  src=""
+                  src="https://cdn.pixabay.com/photo/2017/05/20/19/51/potatoes-2329648_960_720.jpg"
                   alt="Local farm produce"
                   fill
-                  className="object-fit-cover"
+                  className="object-fit-cover w-100 h-100"
                 />
               </div>
             </Col>
@@ -199,9 +199,6 @@ export default function About() {
             <h2 className="display-6 fw-bold mb-3" style={{ color: "#3a5a34" }}>
               Our Journey
             </h2>
-            <p className="fs-5 mx-auto" style={{ maxWidth: "700px", color: "#5f6e5c" }}>
-              niofn iowjgoriej goiehgnuie hguireh guierh giuer werh ewrh dst hqe h erh sbf.
-            </p>
           </div>
 
           <div className="position-relative timeline-container pb-5">
@@ -323,7 +320,7 @@ export default function About() {
                 <Col xs={10} md={5}>
                   <div className="p-4 rounded-4 shadow-sm" style={{ backgroundColor: "white" }}>
                     <h3 className="fs-5 fw-bold mb-2" style={{ color: "#3a5a34" }}>
-                      2020
+                      2019
                     </h3>
                     <p className="mb-0" style={{ color: "#5f6e5c" }}>
                       {timeLine[1]}
@@ -352,7 +349,7 @@ export default function About() {
                   <div className="d-none d-md-block">
                     <div className="p-4 rounded-4 shadow-sm" style={{ backgroundColor: "white" }}>
                       <h3 className="fs-5 fw-bold mb-2" style={{ color: "#3a5a34" }}>
-                        2022
+                        2020
                       </h3>
                       <p className="mb-0" style={{ color: "#5f6e5c" }}>
                         {timeLine[2]}
@@ -380,7 +377,7 @@ export default function About() {
                   <div className="d-md-none">
                     <div className="p-4 rounded-4 shadow-sm" style={{ backgroundColor: "white" }}>
                       <h3 className="fs-5 fw-bold mb-2" style={{ color: "#3a5a34" }}>
-                        2022
+                        2020
                       </h3>
                       <p className="mb-0" style={{ color: "#5f6e5c" }}>
                        {timeLine[2]}
@@ -426,7 +423,7 @@ export default function About() {
                 <Col xs={10} md={5}>
                   <div className="p-4 rounded-4 shadow-sm" style={{ backgroundColor: "white" }}>
                     <h3 className="fs-5 fw-bold mb-2" style={{ color: "#3a5a34" }}>
-                      Today
+                      2022
                     </h3>
                     <p className="mb-0" style={{ color: "#5f6e5c" }}>
                       {timeLine[3]}

@@ -4,14 +4,6 @@ import { Button, Col, Container, Image, Nav, Row } from 'react-bootstrap'
 export default function MatchasHero() {
   return (
     <section className="position-relative py-5 py-md-6">
-      <div className="position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: -1, opacity: 0.1 }}>
-        <Image
-          src="/logo192.png"
-          alt="Tea leaves pattern"
-          fill
-          className="object-fit-cover"
-        />
-      </div>
       <Container>
         <Row className="align-items-center gy-4">
           <Col md={6}>
@@ -45,10 +37,10 @@ export default function MatchasHero() {
           <Col md={6}>
             <div className="position-relative rounded-4 overflow-hidden shadow" style={{ height: "400px" }}>
               <Image
-                src=""
+                src="https://cdn.pixabay.com/photo/2023/09/25/07/55/salad-8274421_960_720.jpg"
                 alt="Vegetarian dishes and tea"
                 fill
-                className="object-fit-cover"
+                className="object-fit-cover w-100 h-100"
               />
             </div>
           </Col>

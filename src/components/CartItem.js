@@ -40,7 +40,7 @@ const CartItem = ({ item, setCart }) => {
 
   return (
     <Card className="p-3 w-100 shadow-sm" style={{ border: "none", backgroundColor: "rgb(248, 245, 240)" }}>
-      <div className="d-flex position-relative mb-2">
+      <div className="d-flex position-relative mb-2 gap-3">
         {item.count && (
           <Badge className="rounded-pill bg-success position-absolute bottom-0 left-0 p-0 d-flex flex-row gap-2 align-items-center justify-content-center overflow-hidden fs-6">
             <div className="p-2" style={{ backgroundColor: "#ffffff33", cursor: "pointer" }} onClick={decItem}>-</div>
@@ -50,7 +50,7 @@ const CartItem = ({ item, setCart }) => {
             <div className="p-2" style={{ backgroundColor: "#ffffff33", cursor: "pointer" }} onClick={incItem}>+</div>
           </Badge>
         )}
-        <img src={item.image_src} alt={item.name} style={{ aspectRatio: "1 / 1", maxWidth: "30%" }} />
+        <img src={item.image_src} alt={item.name} className="rounded-2 object-fit-cover" style={{ width: '120px', aspectRatio: '1 / 1' }} />
         <div>
           <div className="d-flex align-items-center justify-content-between">
             <h4 className="fs-5 fw-bold" style={{ color: "#3a5a34" }}>
