@@ -23,10 +23,10 @@ export default function MatchasMenuCard({ item, fullMode, buyMode, buyClickHandl
         <Card className="h-100 border-0 shadow-sm rounded-4 overflow-hidden">
             <div className="position-relative" style={{ height: "200px" }}>
                 <Image
-                    src={item.imageSrc}
+                    src={item.image_src}
                     alt={item.name}
                     fill
-                    className="object-fit-cover"
+                    className="object-fit-cover w-100 h-100 position-absolute"
                 />
                 {fullMode || (
                     <Badge className="position-absolute top-0 start-0 m-3 rounded-pill bg-success">
